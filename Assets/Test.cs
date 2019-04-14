@@ -7,7 +7,7 @@ public class Boss{
 
     //魔法攻撃用の関数
     public void Magic(int usedmp){
-        if (mp > usedmp){
+        if (mp >= usedmp){
             //残りmpを減らす
             this.mp -= usedmp;
             Debug.Log("魔法攻撃をした。残りMPは" + this.mp);
